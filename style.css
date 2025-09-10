@@ -1,6 +1,6 @@
 body {
-    font-family: 'Brush Script MT', cursive, sans-serif;
-    background-image: url('background1.jpg');
+    font-family: 'Roboto', sans-serif;
+    background-image: url('backgrounds.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +22,7 @@ body {
 }
 
 .container h1 {
-    font-family: 'Brush Script MT', cursive, sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 .hidden {

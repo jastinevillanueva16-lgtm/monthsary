@@ -36,16 +36,21 @@ var btn = document.getElementById("heart-btn");
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
 
+// Get the audio element
+var audio = document.getElementById("kissme-audio");
+
 // When the user clicks the button, open the modal
 btn.onclick = function() {
     modal.style.display = "block";
     setTimeout(() => modal.classList.add('show'), 10);
+    audio.play();
 }
 
 // When the user clicks on <span> (x), close the modal
 span.onclick = function() {
     modal.classList.remove('show');
     setTimeout(() => modal.style.display = "none", 500);
+    audio.pause();
 }
 
 // When the user clicks anywhere outside of the modal, close it
@@ -53,5 +58,6 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.classList.remove('show');
         setTimeout(() => modal.style.display = "none", 500);
+        audio.pause();
     }
 }
